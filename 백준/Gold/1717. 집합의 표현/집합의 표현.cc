@@ -15,7 +15,7 @@ void unionParent(int a, int b) {
     a = getParent(a);
     b = getParent(b);
 
-    if(a > b) parent[a] = b;
+    if(a < b) parent[a] = b;
     else parent[b] = a;
 }
 
